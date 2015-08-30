@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/SplashScreen.unity
+  - enabled: 1
+    path: Assets/Scene/StartMenu.unity
+  - enabled: 1
+    path: Assets/Scene/GameOverScene.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_01/level_01_stage_01.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_01/level_02_stage_01.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_01/level_03_stage_01.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_01/level_04_stage_01.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_01/level_05_stage_01.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_02/level_01_stage_02.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_02/level_02_stage_02.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_02/level_03_stage_02.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_02/level_04_stage_02.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_02/level_05_stage_02.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_03/level_01_stage_03.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_03/level_02_stage_03.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_03/level_03_stage_03.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_03/level_04_stage_03.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_03/level_05_stage_03.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_01/stage_01_finished.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_02/stage_02_finished.unity
+  - enabled: 1
+    path: Assets/Scene/Stage_03/stage_03_finished.unity
+  - enabled: 1
+    path: Assets/Scene/FinalGameScreen.unity

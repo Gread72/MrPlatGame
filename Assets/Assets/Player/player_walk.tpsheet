@@ -1,0 +1,21 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: player_walk.png (256 x 512)
+# $TexturePacker:SmartUpdate:22e441c7dcb3f7d08bbe33d3920d5d05:422468f21785d0ce5f6282244297cade:10e8bffad0a3817b52d06d4d22433b17$
+#
+
+walk0001;0;416;75;96;0.5;0.5
+walk0002;75;416;75;96;0.5;0.5
+walk0003;150;416;75;96;0.5;0.5
+walk0004;0;320;75;96;0.5;0.5
+walk0005;75;320;75;96;0.5;0.5
+walk0006;150;320;75;96;0.5;0.5
+walk0007;0;224;75;96;0.5;0.5
+walk0008;75;224;75;96;0.5;0.5
+walk0009;150;224;75;96;0.5;0.5
+walk0010;0;128;75;96;0.5;0.5
+walk0011;0;32;75;96;0.5;0.5
