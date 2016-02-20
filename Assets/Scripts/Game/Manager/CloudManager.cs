@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * CloudManager Class - Handle Parallax for clouds
+ *
+ */
+
 public class CloudManager : MonoBehaviour {
 
 	public GameObject[] clouds;

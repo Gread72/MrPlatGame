@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * BlockGroundMediator Class - Mediator for Block Ground Component
+ *
+ */
+
 public class BlockGroundMediator : MonoBehaviour {
 
 	public GameObject block;

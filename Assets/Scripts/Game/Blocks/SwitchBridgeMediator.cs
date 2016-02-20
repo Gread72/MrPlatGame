@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * SwitchMediator Class - Handler/Mediator for Bridge Switch Component
+ *
+ */
+
 public class SwitchBridgeMediator : MonoBehaviour
 {
     public Sprite switchOnSprite;

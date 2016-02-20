@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * SwitchMediator Class - Handler/Mediator for Switch Component
+ *
+ */
+
 public class SwitchMediator : MonoBehaviour {
 
 	public GameObject[] wallBlocks;

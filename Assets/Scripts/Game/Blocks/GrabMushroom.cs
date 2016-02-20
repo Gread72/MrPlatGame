@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * GrabMushroom Class - Handler/Mediator for Mushroom Component
+ *
+ */
+
 public class GrabMushroom : MonoBehaviour {
 
     public int pointEarned = 500;

@@ -2,6 +2,11 @@
 using System.Collections;
 using System;
 
+/*
+ * Enemy Class - All things to do with the enemy game object, a mediator 
+ *
+ */
+
 [Serializable]
 public class Enemy : MonoBehaviour
 {

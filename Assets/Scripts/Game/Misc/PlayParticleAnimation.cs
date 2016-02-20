@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * PlayParticleAnimation Class - Play particle 
+ *
+ */
+
 public class PlayParticleAnimation : MonoBehaviour {
 
 	[SerializeField] private ParticleSystem _anim;
@@ -11,8 +16,4 @@ public class PlayParticleAnimation : MonoBehaviour {
 		_anim.Play();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

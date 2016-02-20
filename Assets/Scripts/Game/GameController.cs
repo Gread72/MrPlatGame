@@ -2,6 +2,13 @@
 using System.Collections;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+/*
+ * GameController Class - Controller/manager for the game - instance of round logic
+ *
+ * 
+ */
 
 public class GameController : MonoBehaviour {
 
@@ -70,33 +77,35 @@ public class GameController : MonoBehaviour {
         int enemyCount = _refGameModel.GetEnemyCount("Enemy_01", _refGameModel.level, (int)_refGameModel.stage);
         uiMediator.StatusText.text = "Total Score: " + _refGameModel.totalScore + " \nMonsters Killed: " + enemyCount + "\nKarma Points: 9";
         Time.timeScale = 0;
-		//NavToNext();
 	}
 
 	IEnumerator ResetLevel(){
 		yield return new WaitForSeconds(1);
         _refGameModel.resetLevelScore();
-		Application.LoadLevel(resetSceneName);
+        //Application.LoadLevel(resetSceneName);
+        SceneManager.LoadScene(resetSceneName);
 	}
 
 	IEnumerator NextLevel(){
 		yield return new WaitForSeconds(1);
-		Application.LoadLevel(nextSceneName);
-	}
+        //Application.LoadLevel(nextSceneName);
+        SceneManager.LoadScene(nextSceneName);
+    }
 
     IEnumerator GameOver()
     {
         //Debug.Log("Game Over - level: " + _refGameModel.level + " stage:" + _refGameModel.stage);
-
         _refGameModel.PostGameOver();
-
         yield return new WaitForSeconds(2);
-        Application.LoadLevel(gameOverSceneName);
+        //Application.LoadLevel(gameOverSceneName);
+        SceneManager.LoadScene(gameOverSceneName);
     }
 
 	public void NavToMenu(){
-		Application.LoadLevel("StartMenu");
-	}
+		//Application.LoadLevel("StartMenu");
+        SceneManager.LoadScene("StartMenu");
+
+    }
 
 	public void NavToNext(){
         Time.timeScale = 1;

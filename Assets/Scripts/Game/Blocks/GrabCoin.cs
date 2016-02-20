@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * GrabCoin Class - Handler/Mediator for Coin Component
+ *
+ */
+
 public class GrabCoin : MonoBehaviour
 {   
 	public int pointEarned = 100;

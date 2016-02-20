@@ -2,6 +2,11 @@
 using System.Collections;
 using System;
 
+/*
+ * Player Class - All things to do with the player game object, a mediator 
+ *
+ */
+
 public delegate void DelegateCurrentRoundedPosition(float x, float y);
 public delegate void GoalFoundEvent();
 

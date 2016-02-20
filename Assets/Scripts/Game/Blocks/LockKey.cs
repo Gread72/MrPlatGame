@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * LockKey Class - Handler/Mediator for Lock Component
+ *
+ */
+
 public class LockKey : MonoBehaviour {
 
 	public string keyName = "";

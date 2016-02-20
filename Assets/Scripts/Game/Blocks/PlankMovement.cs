@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * PlankMovement Class - Mediator for Plank Component
+ *
+ */
+
 public class PlankMovement : MonoBehaviour {
 
     public direction currentDirection;

@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * DestroyWalls Class - Handle Collision and play audio when destroying walls 
+ *
+ */
+
 public class DestroyWalls : MonoBehaviour {
 
 	public GameObject[] wallBlocks;

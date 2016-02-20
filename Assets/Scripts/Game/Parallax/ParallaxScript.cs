@@ -1,6 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * ParallaxScript Class - Utility script for Parallax functionality
+ *
+ * TODO: 
+ * - Change the button state - Restart on the last level 
+ * 
+ * 
+ */
+
 public class ParallaxScript : MonoBehaviour {
 
     public Player playScript;

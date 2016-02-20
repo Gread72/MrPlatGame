@@ -2,6 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/*
+ * UIMediator Class - Mediator for the canvas UI components 
+ *
+ * 
+ */
+
 public class UIMediator : MonoBehaviour {
     
     public GameObject configPanelWindow;
@@ -12,6 +18,20 @@ public class UIMediator : MonoBehaviour {
     public Button gearButton;
     public Slider bgAudioVolSlider;
     public Slider sfxAudioVolSlider;
+
+    private const string KEY_RED = "key_red";
+    private const string KEY_GREEN = "key_green";
+    private const string KEY_BLUE = "key_blue";
+    private const string KEY_YELLOW = "key_yellow";
+
+    private const string IMAGE_KEY_RED = "red_key";
+    private const string IMAGE_KEY_GREEN = "green_key";
+    private const string IMAGE_KEY_BLUE = "blue_key";
+    private const string IMAGE_KEY_YELLOW = "yellow_key";
+    private const string IMAGE_PLAYER_COUNT_1 = "player_count_1";
+    private const string IMAGE_PLAYER_COUNT_2 = "player_count_2";
+    private const string IMAGE_PLAYER_COUNT_3 = "player_count_3";
+
 
     [HideInInspector][SerializeField] private Button _goToMenuButton;
     [HideInInspector][SerializeField] private Button _nextButton;
@@ -95,16 +115,16 @@ public class UIMediator : MonoBehaviour {
 
 	public void EnableKeyFound(string keyname){
 		switch(keyname){
-		case "key_red":
+		case KEY_RED:
 			_redKey.gameObject.SetActive(true);
 			break;
-		case "key_green":
+		case KEY_GREEN:
 			_greenKey.gameObject.SetActive(true);
 			break;
-		case "key_blue":
+		case KEY_BLUE:
 			_blueKey.gameObject.SetActive(true);
 			break;
-		case "key_yellow":
+		case KEY_YELLOW:
 			_yellowKey.gameObject.SetActive(true);
 			break;
 		default:
@@ -113,12 +133,12 @@ public class UIMediator : MonoBehaviour {
 		}
 	}
 
-	public void EndOfLevel(){
+	//public void EndOfLevel(){
 		//_goToMenuButton.gameObject.SetActive(true);
 		//_goToMenuButton.enabled = true;
 		//_nextButton.gameObject.SetActive(true);
 		//_nextButton.enabled = true;
-	}
+	//}
 
 	public void GoToMenu(){
 		_gameController.NavToMenu();
@@ -152,33 +172,33 @@ public class UIMediator : MonoBehaviour {
         {
             switch (img.name)
             {
-                case "red_key":
+                case IMAGE_KEY_RED:
                     imagesExist = true;
                     _redKey = img;
                     _redKey.gameObject.SetActive(false);
                     break;
-                case "green_key":
+                case IMAGE_KEY_GREEN:
                     imagesExist = true;
                     _greenKey = img;
                     _greenKey.gameObject.SetActive(false);
                     break;
-                case "blue_key":
+                case IMAGE_KEY_BLUE:
                     imagesExist = true;
                     _blueKey = img;
                     _blueKey.gameObject.SetActive(false);
                     break;
-                case "yellow_key":
+                case IMAGE_KEY_YELLOW:
                     imagesExist = true;
                     _yellowKey = img;
                     _yellowKey.gameObject.SetActive(false);
                     break;
-                case "player_count_1":
+                case IMAGE_PLAYER_COUNT_1:
                     _playerLives1 = img;
                     break;
-                case "player_count_2":
+                case IMAGE_PLAYER_COUNT_2:
                     _playerLives2 = img;
                     break;
-                case "player_count_3":
+                case IMAGE_PLAYER_COUNT_3:
                     _playerLives3 = img;
                     break;
             }
@@ -236,10 +256,17 @@ public class UIMediator : MonoBehaviour {
 
     public void PopUpConfigWindowViewToggle()
     {
-        Debug.Log("PopUpConfigWindowViewToggle");
-
         _isPopUpConfigWindowOpen = !_isPopUpConfigWindowOpen;
 
+        if (_isPopUpConfigWindowOpen)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+        
         configPanelWindow.SetActive(_isPopUpConfigWindowOpen);
     }
 

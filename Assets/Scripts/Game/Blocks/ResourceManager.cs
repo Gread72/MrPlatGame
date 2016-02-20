@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * ResourceManager Class - Manager for sprite asset
+ *
+ */
+
 public class ResourceManager : MonoBehaviour {
 
     [SerializeField]

@@ -1,6 +1,12 @@
 ﻿using System;
 using UnityEngine;
 
+/*
+ * BoundaryParamVO Class - Data value for Boundary info
+ *
+ * 
+ */
+
 [Serializable]
 public class BoundaryParamVO
 {

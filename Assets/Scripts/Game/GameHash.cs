@@ -1,6 +1,12 @@
 ﻿using System;
 using System.Collections;
 
+/*
+ * GameHash Class - Contains static data for Tag name, object name and Animation state 
+ *
+ * 
+ */
+
 public static class GameHash {
 
     public static string GOAL_TAG = "Goal";

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 /*
+ * GameModel Class - Singleton Based Model containing info on game state - level/round, score and lives 
+ *
  * TODO: 
  * - Serialize game state for replayablity (high score, level, stage) - restart will player lives
  * - Restart on the last level 

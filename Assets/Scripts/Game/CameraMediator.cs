@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * CameraMediator Class - Mean to keep the Camera moving with the player
+ *
+ * 
+ */
+
 public class CameraMediator : MonoBehaviour {
 
 	public GameObject target;

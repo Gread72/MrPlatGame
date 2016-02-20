@@ -1,5 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
+/*
+ * FinishStageScreen Class - Mediator for Finish/End Screen
+ *
+ * TODO: 
+ * - Change the button state - Restart on the last level 
+ * 
+ * 
+ */
 
 public class FinishStageScreen : MonoBehaviour {
 
@@ -22,6 +32,7 @@ public class FinishStageScreen : MonoBehaviour {
         }
 
         yield return new WaitForSeconds(2);
-        Application.LoadLevel(nextSceneName);
+        SceneManager.LoadScene(nextSceneName);
+        //Application.LoadLevel(nextSceneName);
     }
 }

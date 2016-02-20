@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * ParallaxOption Class - Utility script for Parallax functionality - save/restore position
+ *
+ * 
+ * 
+ */
+
 public class ParallaxOption : MonoBehaviour {
 
 	public bool moveParallax;

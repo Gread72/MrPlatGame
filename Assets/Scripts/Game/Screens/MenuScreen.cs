@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /*
+ * MenuScreen Class - Mediator for Main Menu Screen
+ *
  * TODO: 
  * - Change the button state - Restart on the last level 
  * 
@@ -100,7 +103,8 @@ public class MenuScreen : MonoBehaviour {
 
     public void ReloadScene()
     {
-        Application.LoadLevel(startGameScene);
+        SceneManager.LoadScene(startGameScene);
+        //Application.LoadLevel(startGameScene);
     }
 
     public void StartGame_Stage1()
@@ -111,7 +115,8 @@ public class MenuScreen : MonoBehaviour {
         _refGameModel.stage = GameModel.stageName.STAGE_1;
         _refGameModel.playerLives = 3;
 
-        Application.LoadLevel(startGameScene);
+        SceneManager.LoadScene(startGameScene);
+        //Application.LoadLevel(startGameScene);
     }
 
     public void StartGame_Stage2()
@@ -121,7 +126,8 @@ public class MenuScreen : MonoBehaviour {
         _refGameModel.stage = GameModel.stageName.STAGE_2;
         _refGameModel.playerLives = 3;
 
-        Application.LoadLevel(startGameScene);
+        SceneManager.LoadScene(startGameScene);
+        //Application.LoadLevel(startGameScene);
     }
 
     public void StartGame_Stage3()
@@ -131,11 +137,13 @@ public class MenuScreen : MonoBehaviour {
         _refGameModel.stage = GameModel.stageName.STAGE_3;
         _refGameModel.playerLives = 3;
 
-        Application.LoadLevel(startGameScene);
+        SceneManager.LoadScene(startGameScene);
+        //Application.LoadLevel(startGameScene);
     }
 
     public void GoToGameMenu()
     {
-        Application.LoadLevel("StartMenu");
+        SceneManager.LoadScene("StartMenu");
+        //Application.LoadLevel("StartMenu");
     }
 }

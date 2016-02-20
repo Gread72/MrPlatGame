@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * SpecialBlock Class - Handler/Mediator for Special Block
+ *
+ */
+
 public class SpecialBlock : MonoBehaviour {
 
     [SerializeField] private SpriteRenderer _spriteRend;

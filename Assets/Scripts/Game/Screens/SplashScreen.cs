@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+/*
+ * SplashScreen Class - Mediator for Splash Screen - basically loading the scenes
+ *
+ * Note: this means to load scene is not as useful as expected
+ */
 
 
 public class SplashScreen : MonoBehaviour {
@@ -16,7 +23,8 @@ public class SplashScreen : MonoBehaviour {
 
     IEnumerator ReadySteadyGo()
     {
-        AsyncOperation async = Application.LoadLevelAsync(levelToLoad);
+        AsyncOperation async = SceneManager.LoadSceneAsync(levelToLoad);
+        //Application.LoadLevelAsync(levelToLoad);
 
         while (!async.isDone)
         {
@@ -27,8 +35,6 @@ public class SplashScreen : MonoBehaviour {
             yield return null;
            
         }
-
-        //Debug.Log(async.isDone);
 
     }
 	

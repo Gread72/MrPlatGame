@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * BlockDrop Class - Handler/Mediator for Block that will be dropped
+ *
+ */
+
 public class BlockDrop : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other) //Hero jumps on enemy

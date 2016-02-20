@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * DestroyScript Class - Handle Collision
+ *
+ */
+
 public class DestroyScript : MonoBehaviour {
     [SerializeField] private GameController gm;
 	

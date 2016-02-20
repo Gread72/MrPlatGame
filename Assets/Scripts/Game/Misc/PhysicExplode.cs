@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * PhysicExplode Class - Apply force to explode 
+ *
+ */
+
 public class PhysicExplode : MonoBehaviour {
 
 	public float xDirection = 20;

@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * ParallaxLayer Class - Utility script for Parallax functionality - editor to set parallax
+ *
+ * 
+ * 
+ */
+
 [ExecuteInEditMode]
 public class ParallaxLayer : MonoBehaviour {
 	public float speedX;

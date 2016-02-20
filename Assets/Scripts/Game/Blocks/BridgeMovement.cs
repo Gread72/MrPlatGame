@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * GrabCoin Class - Mediator for Bridge Component
+ *
+ */
+
 public class BridgeMovement : MonoBehaviour {
 
     public int currentDirection;

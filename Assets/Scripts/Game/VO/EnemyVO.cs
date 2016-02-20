@@ -1,5 +1,11 @@
 ﻿using System;
 
+/*
+ * EnemyVO Class - Data value for Enemy info
+ *
+ * 
+ */
+
 [Serializable]
 public class EnemyVO {
 

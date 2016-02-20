@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * AudioManager Class - Singleton - Audio Manager for most parts of the game - handle volume of audio 
+ *
+ */
+
 public class AudioManager : MonoBehaviour {
 
     private static AudioManager _instance;
